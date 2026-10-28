@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071525" />
+    <meta name="description" content="An interactive exploration of electric vehicle market performance, battery technologies, manufacturers, and customer sentiment." />
+    <title>EV Market Insights | Electric mobility, made visible</title>
+    <link rel="preconnect" href="https://public.tableau.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="EV Market Insights home">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span>EV<span class="brand-light">/</span>INSIGHTS</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#explore">Explore</a>
+        <a href="#perspectives">Perspectives</a>
+        <a href="#method">About</a>
+      </nav>
+      <a class="top-link" href="https://public.tableau.com/views/EV_Market_Insightsw33/Dashboard1?:language=en-US&publish=yes" target="_blank" rel="noreferrer">Open Tableau <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero page-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> ELECTRIC MOBILITY · MARKET INTELLIGENCE</p>
+          <h1>Where the EV market<br /><span>is moving next.</span></h1>
+          <p class="hero-intro">Explore how vehicle categories, manufacturers, battery choices and customer sentiment are shaping the electric vehicle landscape.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#explore">Explore the insights <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://public.tableau.com/views/EV_Market_Insights_17932119822480/Story1?:language=en-US&publish=yes" target="_blank" rel="noreferrer">Read the story <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note"><span class="note-icon">↗</span><span>One connected view of market performance and technology adoption.</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Abstract electric mobility illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="visual-glow"></div>
+          <div class="visual-label label-top"><span class="tiny-dot"></span> THE TRANSITION IS IN MOTION</div>
+          <div class="visual-core"><span class="core-bolt">ϟ</span><span class="core-caption">ELECTRIC<br />BY DESIGN</span></div>
+          <div class="visual-label label-bottom">DATA → DECISIONS → IMPACT</div>
+          <span class="float-chip chip-one">BATTERY INNOVATION</span><span class="float-chip chip-two">GLOBAL MARKETS</span><span class="float-chip chip-three">CUSTOMER VOICE</span>
+        </div>
+      </section>
+
+      <section class="signal-strip page-wrap" aria-label="Project coverage">
+        <div><span class="signal-number">05</span><span class="signal-label">Battery technologies<br />in focus</span></div>
+        <div><span class="signal-number">06</span><span class="signal-label">Market insight<br />dimensions</span></div>
+        <div><span class="signal-number">03</span><span class="signal-label">Decision-maker<br />perspectives</span></div>
+        <p>Built to make a complex, fast-changing industry easier to explore.</p>
+      </section>
+
+      <section class="explore-section page-wrap" id="explore">
+        <div class="section-heading">
+          <div><p class="eyebrow">THE INTERACTIVE EXPERIENCE</p><h2>Explore the market</h2></div>
+          <p>Switch between the executive dashboard and a guided story. Use Tableau controls to filter and inspect the views.</p>
+        </div>
+        <div class="viz-shell">
+          <div class="viz-toolbar">
+            <div class="view-tabs" role="tablist" aria-label="Choose an interactive view">
+              <button class="view-tab is-active" id="tab-dashboard" role="tab" aria-selected="true" aria-controls="panel-dashboard" data-view="dashboard">Market dashboard <span>01</span></button>
+              <button class="view-tab" id="tab-story" role="tab" aria-selected="false" aria-controls="panel-story" data-view="story">Guided story <span>02</span></button>
+            </div>
+            <a id="open-view" class="open-view" href="https://public.tableau.com/views/EV_Market_Insightsw33/Dashboard1?:language=en-US&publish=yes" target="_blank" rel="noreferrer">Open full view <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="viz-caption"><span class="live-dot"></span><p id="view-description">A multi-angle overview of EV categories, sales, manufacturers, geography, ratings and battery performance.</p></div>
+          <div class="viz-panels">
+            <section class="viz-panel is-active" id="panel-dashboard" role="tabpanel" aria-labelledby="tab-dashboard">
+              <iframe title="Electric Vehicle Market Performance dashboard" src="https://public.tableau.com/views/EV_Market_Insightsw33/Dashboard1?:showVizHome=no&:showTabs=false&:toolbar=yes" loading="lazy" allowfullscreen></iframe>
+            </section>
+            <section class="viz-panel" id="panel-story" role="tabpanel" aria-labelledby="tab-story" hidden>
+              <iframe title="EV Market Strategy Story" src="https://public.tableau.com/views/EV_Market_Insights_17932119822480/Story1?:showVizHome=no&:showTabs=false&:toolbar=yes" loading="lazy" allowfullscreen></iframe>
+            </section>
+          </div>
+          <div class="viz-footer"><span>Interactive visualization hosted on Tableau Public</span><span>Tip: use the view's filters and hover details to explore.</span></div>
+        </div>
+      </section>
+
+      <section class="perspectives page-wrap" id="perspectives">
+        <div class="section-heading">
+          <div><p class="eyebrow">THREE WAYS TO READ THE SIGNAL</p><h2>Insights for every decision</h2></div>
+          <p>The same market data can answer different questions. Start with the decision you need to make.</p>
+        </div>
+        <div class="perspective-grid">
+          <article class="perspective-card"><span class="card-index">01 / STRATEGY</span><div class="card-icon">↗</div><h3>Shape the portfolio</h3><p>Compare category demand, sales trends and customer ratings to spot segments worth strengthening or exploring.</p><a href="#explore" data-switch="dashboard">Explore market mix <span>→</span></a></article>
+          <article class="perspective-card"><span class="card-index">02 / COMPETITION</span><div class="card-icon">◉</div><h3>Understand the field</h3><p>Review manufacturer performance, production geography and battery adoption to frame a stronger market position.</p><a href="#explore" data-switch="dashboard">Compare manufacturers <span>→</span></a></article>
+          <article class="perspective-card"><span class="card-index">03 / SUSTAINABILITY</span><div class="card-icon">⌁</div><h3>Track the technology</h3><p>Explore how battery chemistry, range and product design relate to the evolving customer experience.</p><a href="#explore" data-switch="story">Follow the story <span>→</span></a></article>
+        </div>
+      </section>
+
+      <section class="method-section" id="method">
+        <div class="method-inner page-wrap">
+          <div><p class="eyebrow">ABOUT THIS PROJECT</p><h2>From market data<br />to clearer questions.</h2></div>
+          <div class="method-copy"><p>This project brings together EV sales, product specifications, battery attributes, manufacturing locations and customer ratings in an interactive Tableau experience.</p><p>Battery technologies covered include LFP, NMC, NCA, Sodium-Ion and Solid-State. The workbook’s measures and filters are available directly in each embedded view.</p><p class="method-caveat">Use the visualizations as an exploratory view of the supplied dataset. The figures describe that dataset and should not be treated as a complete census of the global EV market.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page-wrap"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">E</span><span>EV<span class="brand-light">/</span>INSIGHTS</span></a><span>Electric Vehicle Market Performance &amp; Insights</span><a href="https://public.tableau.com/views/EV_Market_Insightsw33/Dashboard1?:language=en-US&publish=yes" target="_blank" rel="noreferrer">Tableau Public ↗</a></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
+
